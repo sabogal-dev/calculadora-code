@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'netflixBold';
+    src: url(fonts/NetflixSans-Bold.otf);
+}
+
+@font-face {
+    font-family: 'netflixlight';
+    src: url(fonts//NetflixSans-Light.otf);
+}
+
+@font-face {
+    font-family: 'netflixMedium';
+    src: url(fonts//NetflixSans-Medium.otf);
+}
+
+@font-face {
+    font-family: 'netflixRegular';
+    src: url(fonts//NetflixSans-Regular.otf);
+}
+
+
+body {
+    background: rgb(135, 57, 152);
+    background: linear-gradient(90deg, rgba(135, 57, 152, 1) 0%, rgba(255, 108, 128, 1) 100%);
+    background-size: 100% 40%;
+    /* Solo la mitad de la página */
+    background-repeat: no-repeat;
+
+
+    font-family: "netflixlight";
+    color: white;
+
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.contenedor {
+    width: 50vw;
+}
+
+p {
+    font-family: "netflixMedium";
+}
+
+p span {
+    font-family: "netflixlight";
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header p {
+    margin: 0.5rem;
+}
+
+h1 {
+    margin: 0.3rem;
+}
+
+.datosFact {
+    width: 40%;
+}
+
+
+.tarjetaPagos {
+    max-width: 300px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: .5rem;
+    margin: 1rem;
+    z-index: -100;
+}
+
+.tarjetaPagos ul li {
+    padding: .5rem;
+
+}
+
+.tarjetaPagos ul li span {
+    font-size: 12px;
+}
+.tarjetaPagos h1, 
+.tarjetaPagos h4{
+    text-align: center;
+}
+
+
+table {
+    border-spacing: 0;
+    padding: 2rem;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0 auto;
+}
+
+
+table td,
+table th {
+    text-align: center;
+    padding: .8rem 1rem;
+}
+
+tr:nth-child(even),
+table th {
+    background-color: #ebe9e9;
+    /* Color para filas pares */
+
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+    /* Color para filas impares */
+
+}
+
+
+
+
+
+/* seleccion */
+.tabla select {
+    font-family: "netflixMedium";
+    border: none;
+    appearance: none;
+    width: 100%;
+    background-color: #E26085;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.pieIzquierdo {
+    display: flex;
+    /* width: 100%; */
+    align-items: start;
+}
+
+.pieFactura {
+    display: flex;
+    justify-content: space-around;
+}
+
+.totales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.totales p {
+    margin: 0.4rem;
+}
+
+
+.cuadroEnfasis {
+    background: rgb(135, 57, 152);
+    background: linear-gradient(90deg, rgba(135, 57, 152, 1) 0%, rgba(255, 108, 128, 1) 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-family: "netflixBold";
+}
+
+
+.check {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    height: 3rem;
+}
+
+.check p {
+    margin-top: 1rem;
+}
+
+/* From Uiverse.io by G4b413l */
+label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    position: absolute;
+    transform: scale(0);
+}
+
+input[type='checkbox']:checked~.checkbox {
+    transform: rotate(45deg);
+    width: 14px;
+    margin-left: 5px;
+    border-color: #24c78e;
+    border-width: 5px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.checkbox {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: solid 3px #2a2a2ab7;
+    border-radius: 6px;
+    transition: all 0.375s;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .contenedor {
+        width: 100%;
+    }
+}
+
+
+/* From Uiverse.io by Christian-putra30 */
+.input {
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    padding: 1em;
+    background-color: #e1e2e3;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+
+.input:focus {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.btn {
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}

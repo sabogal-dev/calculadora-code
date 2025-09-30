@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento Fácil</title>
+    <link rel="shortcut icon" href="iconCalculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Aprovecha tu Descuento</h1>
+        <header>
+            <div class="factura">
+
+                <form action="#">
+                    <input type="text" placeholder="FACTURA" class="inputFactura input">
+                    <button class="btnBuscar btn">BUSCAR</button>
+                </form>
+                <h2>Documento:</h2>
+                <p class="documento">#</p>
+            </div>
+            <div class="datosFact">
+                <P>CLIENTE : <span class="cliente">cliente</span></P>
+                <p>FECHA: <span class="fechaFact">fecha</span></p>
+                <p>VENCIMIENTO : <span class="fechaFactVence">fecha_vence</span></p>
+                <p>VALOR ORIGINAL : $<span class="precioOdoo"></span></p>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <th>MARCA</th>
+                <th>CANT</th>
+                <th>PRECIO</th>
+                <th>SUB-TOTAL</th>
+                <th>%DESC</th>
+                <th>TOTAL</th>
+            </thead>
+            <tbody class="tabla">
+            </tbody>
+        </table>
+        <div class="pieFactura">
+            <!-- PARTE IZQUIERDA FOOTER -->
+            <div class="pieIzquierdo">
+                <div class="cuadroEnfasis">Última oportunidad : <span class="diasDescuento">0</span> DIAS</div>
+            </div>
+            <!-- parte DERECHA CON TOTALES -->
+            <div class="totales">
+                <p>SUBTOTAL : $<span class="subtotal">0</span></p>
+                <!-- From Uiverse.io by G4b413l -->
+                <div class="check">
+                    <p>aplica IVA19% $<span class="iva"></span> .</p>
+                    <label>
+                        <input type="checkbox">
+                        <span class="checkbox"></span>
+                    </label>
+                </div>
+                <div class="check retefuenteCheck">
+                    <p>Retefuente 2.5% $<span class="retefuente"></span> .</p>
+                    <label>
+                        <input type="checkbox">
+                        <span class="checkbox"></span>
+                    </label>
+                </div>
+                <P>AHORRO : $<span class="ahorro">0</span></P>
+                <div class="cuadroEnfasis">A PAGAR : $<span class="totalPago">0</span></div>
+            </div>
+        </div>
+        <div class="cuadroEnfasis tarjetaPagos">
+            <h3 style="text-align: center;">PAGOS Y DESCUENTOS</h3>
+            <ul>
+                <!-- <li>$2.151.213 -- <span>RCK2069 (CO1701)</span></li>
+                <li>$2.151.213 -- <span>K0000203 (Reversi\u00f3n de: CO1701, Descuento comercial por pronto pago)</span></li> -->
+            </ul>
+            <!-- <h4 style="text-align: center;">pagado : $2.154.123</h4> -->
+        </div>
+    </div>
+</body>
+<script src="get.js"></script>
+
+</html>
